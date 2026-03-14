@@ -1,10 +1,11 @@
+import Container from "./components/layout";
+
 const App = () => {
 
   return(
 
     <>
 
-      <h1>DecideIt</h1>
     </>
   )
 }

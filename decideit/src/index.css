@@ -4,3 +4,71 @@
   margin: 0px;
   box-sizing: border-box;
 }
+
+:root {
+
+  /* ===== Primary Colors ===== */
+
+  --color-primary: #2563EB;        /* Primary 600 */
+  --color-secondary: #059669;      /* Secondary 600 */
+
+  /* ===== Base UI Colors ===== */
+
+  --color-background: #F5F5F5;     /* White */
+  --color-surface: #F3F4F6;        /* Neutral 100 */
+  --color-border: #D1D5DB;         /* Neutral 300 */
+
+  /* ===== Text Colors ===== */
+
+  --color-text: #111827;           /* Neutral 900 */
+  --color-text-muted: #6B7280;     /* Neutral 500 */
+
+}
+
+.containercstm {
+
+  width: 100%;
+  max-width: 1450px;
+}
+
+.container_layout {
+
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1600px) {
+  
+
+  .containercstm {
+
+    max-width: 1250px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  
+
+  .containercstm {
+
+    max-width: 1050px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  
+
+  .containercstm {
+
+    max-width: 991px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  
+
+  .containercstm {
+
+    max-width: 100%;
+  }
+}
