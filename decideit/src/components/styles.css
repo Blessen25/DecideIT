@@ -1,0 +1,27 @@
+.button {
+
+    padding: 10px 14px;
+    border-radius: 5px;
+    color: var(--color-text);
+}
+
+.button-primary {
+
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 991px) {
+    .button {
+    
+        padding: 8px 12px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    
+    .button {
+    
+        padding: 5px 8px;
+    }
+}
