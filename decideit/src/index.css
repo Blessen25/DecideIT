@@ -29,6 +29,10 @@
 
   width: 100%;
   max-width: 1450px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .container_layout {
@@ -70,5 +74,15 @@
   .containercstm {
 
     max-width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 575px) {
+  
+  .containercstm {
+
+    padding: 15px;
+    gap: 15px;
   }
 }
