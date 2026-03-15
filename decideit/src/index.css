@@ -23,6 +23,10 @@
   --color-text: #111827;           /* Neutral 900 */
   --color-text-muted: #6B7280;     /* Neutral 500 */
 
+  /* ===== Other Colors ===== */
+
+  --color-white: #FFFFFF;
+
 }
 
 .containercstm {
