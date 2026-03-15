@@ -50,46 +50,39 @@ body {
    Desktop (default) 1024px+
 ===================================== */
 
-h1 {
+.h1 {
   font-size: 56px;
   line-height: 70px;
-  font-weight: 400;
 }
 
-h2 {
+.h2 {
   font-size: 40px;
   line-height: 50px;
-  font-weight: 400;
 }
 
-h3 {
+.h3 {
   font-size: 32px;
   line-height: 40px;
-  font-weight: 400;
 }
 
-h4 {
+.h4 {
   font-size: 24px;
   line-height: 32px;
-  font-weight: 400;
 }
 
 .body-text {
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
 }
 
 .body-small {
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
 }
 
 .label-text {
   font-size: 12px;
   line-height: 18px;
-  font-weight: 500;
 }
 
 /* =====================================
@@ -98,22 +91,22 @@ h4 {
 
 @media screen and (max-width: 1023px) {
 
-  h1 {
+  .h1 {
     font-size: 56px;
     line-height: 70px;
   }
 
-  h2 {
+  .h2 {
     font-size: 40px;
     line-height: 50px;
   }
 
-  h3 {
+  .h3 {
     font-size: 32px;
     line-height: 40px;
   }
 
-  h4 {
+  .h4 {
     font-size: 24px;
     line-height: 32px;
   }
@@ -141,22 +134,22 @@ h4 {
 
 @media screen and (max-width: 991px) {
 
-  h1 {
+  .h1 {
     font-size: 40px;
     line-height: 50px;
   }
 
-  h2 {
+  .h2 {
     font-size: 34px;
     line-height: 42px;
   }
 
-  h3 {
+  .h3 {
     font-size: 28px;
     line-height: 36px;
   }
 
-  h4 {
+  .h4 {
     font-size: 22px;
     line-height: 28px;
   }
@@ -184,22 +177,22 @@ h4 {
 
 @media screen and (max-width: 575px) {
 
-  h1 {
+  .h1 {
     font-size: 32px;
     line-height: 40px;
   }
 
-  h2 {
+  .h2 {
     font-size: 28px;
     line-height: 35px;
   }
 
-  h3 {
+  .h3 {
     font-size: 24px;
     line-height: 31px;
   }
 
-  h4 {
+  .h4 {
     font-size: 20px;
     line-height: 28px;
   }
