@@ -21,6 +21,26 @@
 
 }
 
+.button-secondary {
+
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
+.button-secondary:hover {
+
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+}
+
+.button-icon {
+
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
 @media screen and (max-width: 991px) {
     .button {
     

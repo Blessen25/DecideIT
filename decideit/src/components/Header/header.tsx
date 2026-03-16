@@ -1,4 +1,4 @@
-import { Button_Primary } from "../button";
+import {Button_Primary_with_Icon } from "../button";
 import Container from "../layout"
 import "./header.css";
 
@@ -19,7 +19,7 @@ export const Header_Signup = () => {
                     </div>
                     <div className="header-register">
                         <a href="#" className="deco-none body-text header-link">Register</a>
-                        <Button_Primary />
+                        <Button_Primary_with_Icon label="Login" icon="fa-solid fa-user"/>
                     </div>
                 </div>
             </Container>
