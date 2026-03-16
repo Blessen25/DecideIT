@@ -11,7 +11,9 @@ export interface ButtonProps {
 
     label?:string;
     icon?:string;
+    route ?: string;
     class?: string;
     style?: React.CSSProperties;
     onClick?: React.MouseEventHandler<HTMLAnchorElement>;
+
 }
