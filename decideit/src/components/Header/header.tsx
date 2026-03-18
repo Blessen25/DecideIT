@@ -1,11 +1,17 @@
-import { useState } from "react";
+import { use, useState } from "react";
 import {Button_Primary_with_Icon } from "../button";
 import Container from "../layout"
 import "./header.css";
 
 export const Header_Signup = () => {
     
-    const[isLoggedin, setIsLoggedin] = useState(true);
+    const [isLoggedin, setIsLoggedin] = useState(true);
+    const [profilepic, setProfilePic] = useState('');
+    const [userOpen, setUserOpen] = useState(false);
+    const GetUserClicked = () => {
+
+        setUserOpen(!userOpen);
+    }
     return(
 
         <>
@@ -35,8 +41,24 @@ export const Header_Signup = () => {
                         {
                             isLoggedin ? (
                                 <>
-                                
+                                    <div className="islogged">
+                                        <a href="#" className="user" onClick={GetUserClicked}>
+                                            {profilepic ? (<>
+                                            
+                                            </>) : (<>
+                                                <i className="fa-solid fa-user body-text"></i>
+                                            </>)
+                                            
+                                        }
+                                        </a>
+                                            <div className={`userdetailsopened ${userOpen ? "open" : ""}`}>
+                                                <a href="#" className="deco-none body-text header-link flex-link "><span><i className="fa-solid fa-gear"></i></span>Profile</a>
+                                                <a href="#" className="deco-none body-text header-link flex-link "><span><i className="fa-solid fa-user-group"></i></span>Friends</a>
+                                                <a href="#" className="deco-none body-text header-link flex-link "><span><i className="fa-solid fa-arrow-right-from-bracket"></i></span>Logout</a>
+                                            </div>
+                                    </div>
                                 </>
+
                             ) :(
                             <>
                                 <a href="#" className="deco-none body-text header-link">Register</a>

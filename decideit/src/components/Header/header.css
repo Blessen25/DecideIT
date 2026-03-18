@@ -54,6 +54,60 @@
     gap: 20px;
 }
 
+.user {
+
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.islogged {
+
+    position: relative;
+}
+
+.userdetailsopened {
+
+    position: absolute;
+    top: 50px;
+    left: -206px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 30px 60px;
+    z-index: 1000;
+    background-color: var(--color-white);
+
+    transform-origin: left center;
+
+    opacity: 0;
+    transform: translate(20px, -5px);
+    pointer-events: none;
+
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    }
+
+.userdetailsopened.open {
+
+    opacity: 1;
+    transform: translate(0,0);
+    pointer-events: auto;
+}
+
+.flex-link {
+
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
 @media screen and (max-width: 1150px) {
     
     .header-details {
