@@ -94,7 +94,22 @@ export const Header_Signup = () => {
                 <>
                     <div className="outlay"></div>
                     <div className="sidebar">
+                        {isLoggedin ?
+                        (<>
 
+                            <a href="#" className="deco-none"><span></span>Home</a>
+                            <a href="#" className="deco-none"><span></span>About</a>
+                            <a href="#" className="deco-none"><span></span>Voting</a>
+                            <a href="#" className="deco-none"><span></span>FAQ</a>
+                        </>) :(
+                            <>
+                                <a href="#" className="deco-none"><span></span>Home</a>
+                                <a href="#" className="deco-none"><span></span>About</a>
+                                <a href="#" className="deco-none"><span></span>FAQ</a>
+                                <a href="#" className="deco-none"><span></span>Register</a>
+                            </>
+                        )    
+                    }
                         
                     </div>
                 </>

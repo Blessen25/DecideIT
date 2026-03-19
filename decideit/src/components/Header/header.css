@@ -166,8 +166,9 @@
     width: 250px;
     height: calc(100% - 92px);
     z-index: 100;
-    background-color: var(--color-primary);
-
+    background-color: var(--color-white);
+    border-radius: 0px 5px 0px 0px;
+    padding: 20px;
 }
 
 @media screen and (max-width: 1150px) {
