@@ -8,16 +8,33 @@ export const Header_Signup = () => {
     const [isLoggedin, setIsLoggedin] = useState(true);
     const [profilepic, setProfilePic] = useState('');
     const [userOpen, setUserOpen] = useState(false);
+    const [sidebarActive, setSidebarActive] = useState(false);
+
+    const GetSidebarActive = () => {
+
+        setSidebarActive(!sidebarActive);
+    }
+
     const GetUserClicked = () => {
 
         setUserOpen(!userOpen);
     }
+
+    const GetLoggedOut = () => {
+
+        setIsLoggedin(!isLoggedin);
+    }
     return(
 
         <>
+            <div className="header-cstm-main">
+
             <Container layout_class="layout-header" container_class="container-header">
                 <div className="header">
                     <div className="logo">
+                        <div className="header-line-resp h4 fw-700">
+                            <i className={`fa-solid fa-align-left header-line fw-700 ${sidebarActive ? "header-line-active" : ""}`} onClick={GetSidebarActive}></i>
+                        </div>
                         <a href="#" className="fw-700 h4 header-title">Decide<span className="header-title-it">IT</span></a>
                     </div>
                     <div className="header-details">
@@ -42,6 +59,7 @@ export const Header_Signup = () => {
                             isLoggedin ? (
                                 <>
                                     <div className="islogged">
+                                        <div className="name_profile">
                                         <a href="#" className="user" onClick={GetUserClicked}>
                                             {profilepic ? (<>
                                             
@@ -51,23 +69,38 @@ export const Header_Signup = () => {
                                             
                                         }
                                         </a>
+                                        <p className="body-text fw-600">Anna</p>
+                                        </div>
                                             <div className={`userdetailsopened ${userOpen ? "open" : ""}`}>
                                                 <a href="#" className="deco-none body-text header-link flex-link "><span><i className="fa-solid fa-gear"></i></span>Profile</a>
                                                 <a href="#" className="deco-none body-text header-link flex-link "><span><i className="fa-solid fa-user-group"></i></span>Friends</a>
-                                                <a href="#" className="deco-none body-text header-link flex-link "><span><i className="fa-solid fa-arrow-right-from-bracket"></i></span>Logout</a>
+                                                <a href="#" className="deco-none body-text header-link flex-link " onClick={GetLoggedOut}><span><i className="fa-solid fa-arrow-right-from-bracket"></i></span>Logout</a>
                                             </div>
                                     </div>
                                 </>
 
                             ) :(
                             <>
-                                <a href="#" className="deco-none body-text header-link">Register</a>
+                                <a href="#" className="deco-none body-text header-link register-link">Register</a>
                                 <Button_Primary_with_Icon label="Login" icon="fa-solid fa-user"/>
                             </>)
                         }
                     </div>
                 </div>
             </Container>
+
+            {sidebarActive && (
+
+                <>
+                    <div className="outlay"></div>
+                    <div className="sidebar">
+
+                        
+                    </div>
+                </>
+            )}
+
+            </div>
         </>
     )
 }
