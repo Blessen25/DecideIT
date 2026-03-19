@@ -97,16 +97,16 @@ export const Header_Signup = () => {
                         {isLoggedin ?
                         (<>
 
-                            <a href="#" className="deco-none"><span></span>Home</a>
-                            <a href="#" className="deco-none"><span></span>About</a>
-                            <a href="#" className="deco-none"><span></span>Voting</a>
-                            <a href="#" className="deco-none"><span></span>FAQ</a>
+                            <a href="#" className="deco-none"><span><i className="fa-solid fa-house"></i></span>Home</a>
+                            <a href="#" className="deco-none"><span><i className="fa-solid fa-circle-info"></i></span>About</a>
+                            <a href="#" className="deco-none"><span><i className="fa-solid fa-square-poll-horizontal"></i></span>Voting</a>
+                            <a href="#" className="deco-none"><span><i className="fa-solid fa-circle-question"></i></span>FAQ</a>
                         </>) :(
                             <>
-                                <a href="#" className="deco-none"><span></span>Home</a>
-                                <a href="#" className="deco-none"><span></span>About</a>
-                                <a href="#" className="deco-none"><span></span>FAQ</a>
-                                <a href="#" className="deco-none"><span></span>Register</a>
+                                <a href="#" className="deco-none"><span><i className="fa-solid fa-house"></i></span>Home</a>
+                                <a href="#" className="deco-none"><span><i className="fa-solid fa-circle-info"></i></span>About</a>
+                                <a href="#" className="deco-none"><span><i className="fa-solid fa-circle-question"></i></span>FAQ</a>
+                                <a href="#" className="deco-none"><span><i className="fa-solid fa-user"></i></span>Register</a>
                             </>
                         )    
                     }
