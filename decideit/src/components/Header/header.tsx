@@ -71,7 +71,7 @@ export const Header_Signup = () => {
                                         </a>
                                         <p className="body-text fw-600">Anna</p>
                                         </div>
-                                            <div className={`userdetailsopened ${userOpen ? "open" : ""}`}>
+                                            <div className={`userdetailsopened ${userOpen && !sidebarActive ? "open" : ""}`}>
                                                 <a href="#" className="deco-none body-text header-link flex-link "><span><i className="fa-solid fa-gear"></i></span>Profile</a>
                                                 <a href="#" className="deco-none body-text header-link flex-link "><span><i className="fa-solid fa-user-group"></i></span>Friends</a>
                                                 <a href="#" className="deco-none body-text header-link flex-link " onClick={GetLoggedOut}><span><i className="fa-solid fa-arrow-right-from-bracket"></i></span>Logout</a>
@@ -88,34 +88,27 @@ export const Header_Signup = () => {
                     </div>
                 </div>
             </Container>
-
-            {sidebarActive && (
-
-                <>
-                    <div className="outlay"></div>
-                    <div className="sidebar">
+                <div className={`outlay ${sidebarActive ? "open" : ""}`}></div>
+                    <div className={`sidebar ${sidebarActive ? "open" : ""}`}>
                         {isLoggedin ?
                         (<>
 
-                            <a href="#" className="deco-none"><span><i className="fa-solid fa-house"></i></span>Home</a>
-                            <a href="#" className="deco-none"><span><i className="fa-solid fa-circle-info"></i></span>About</a>
-                            <a href="#" className="deco-none"><span><i className="fa-solid fa-square-poll-horizontal"></i></span>Voting</a>
-                            <a href="#" className="deco-none"><span><i className="fa-solid fa-circle-question"></i></span>FAQ</a>
+                            <a href="#" className="deco-none sidebar-link body-text fw-600 sidebar-link-active"><span><i className="fa-solid fa-house"></i></span>Home</a>
+                            <a href="#" className="deco-none sidebar-link body-text fw-600"><span><i className="fa-solid fa-circle-info"></i></span>About</a>
+                            <a href="#" className="deco-none sidebar-link body-text fw-600"><span><i className="fa-solid fa-square-poll-horizontal"></i></span>Voting</a>
+                            <a href="#" className="deco-none sidebar-link body-text fw-600"><span><i className="fa-solid fa-circle-question"></i></span>FAQ</a>
                         </>) :(
                             <>
-                                <a href="#" className="deco-none"><span><i className="fa-solid fa-house"></i></span>Home</a>
-                                <a href="#" className="deco-none"><span><i className="fa-solid fa-circle-info"></i></span>About</a>
-                                <a href="#" className="deco-none"><span><i className="fa-solid fa-circle-question"></i></span>FAQ</a>
-                                <a href="#" className="deco-none"><span><i className="fa-solid fa-user"></i></span>Register</a>
+                                <a href="#" className="deco-none sidebar-link body-text fw-600"><span><i className="fa-solid fa-house"></i></span>Home</a>
+                                <a href="#" className="deco-none sidebar-link body-text fw-600"><span><i className="fa-solid fa-circle-info"></i></span>About</a>
+                                <a href="#" className="deco-none sidebar-link body-text fw-600"><span><i className="fa-solid fa-circle-question"></i></span>FAQ</a>
+                                <a href="#" className="deco-none sidebar-link body-text fw-600"><span><i className="fa-solid fa-user"></i></span>Register</a>
                             </>
                         )    
                     }
                         
                     </div>
-                </>
-            )}
-
-            </div>
+                </div>
         </>
     )
 }

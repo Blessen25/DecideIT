@@ -144,7 +144,6 @@
 
 .outlay {
 
-    display: none;
     position: fixed;
     top: 90px;
     left: 0px;
@@ -152,6 +151,16 @@
     height: calc(100% - 90px);
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease-in-out;
+}
+
+.outlay.open {
+
+    opacity: 1;
+    pointer-events: auto;   
 }
 
 .header-cstm-main {
@@ -163,13 +172,42 @@
 
     position: fixed;
     top: 92px;
-    width: 250px;
+    width: 180px;
     height: calc(100% - 92px);
     z-index: 100;
     background-color: var(--color-white);
     border-radius: 0px 5px 0px 0px;
     padding: 20px;
+    
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(20px);
+    transition: transform .3s ease-in-out;
 }
+
+.sidebar.open {
+
+    opacity: 1;
+    transform: translateX(0px);
+    pointer-events: auto;
+}
+
+.sidebar-link {
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: var(--color-text);
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+.sidebar-link-active {
+
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
 
 @media screen and (max-width: 1150px) {
     
@@ -225,6 +263,15 @@
         display: block;
         z-index: 99;
     }
+
+    .sidebar {
+
+        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        z-index: 99;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -232,6 +279,11 @@
     .header {
 
         height: 80px;
+    }
+
+    .sidebar {
+
+        top: 82px;
     }
 
     .header-title-it {
