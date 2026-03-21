@@ -5,7 +5,7 @@ import "./header.css";
 
 export const Header_Signup = () => {
     
-    const [isLoggedin, setIsLoggedin] = useState(true);
+    const [isLoggedin, setIsLoggedin] = useState(false);
     const [profilepic, setProfilePic] = useState('');
     const [userOpen, setUserOpen] = useState(false);
     const [sidebarActive, setSidebarActive] = useState(false);
@@ -81,7 +81,7 @@ export const Header_Signup = () => {
 
                             ) :(
                             <>
-                                <a href="#" className="deco-none body-text header-link register-link">Register</a>
+                                <a href="/signup" className="deco-none body-text header-link register-link">Register</a>
                                 <Button_Primary_with_Icon label="Login" icon="fa-solid fa-user"/>
                             </>)
                         }

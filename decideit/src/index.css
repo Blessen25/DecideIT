@@ -29,6 +29,19 @@
 
 }
 
+.main_layout_cstm  {
+
+  padding-top: 120px;
+  padding-bottom: 30px;
+  justify-content: center;
+}
+
+.main_layout_login  {
+
+  padding-top: 220px;
+  padding-bottom: 130px;
+}
+
 .containercstm {
 
   width: 100%;
@@ -42,6 +55,8 @@
 .container_layout {
 
   display: flex;
+  flex-direction: row;
+  gap: 20px;
   justify-content: center;
 }
 
@@ -93,5 +108,23 @@
 
     padding: 15px;
     gap: 15px;
+  }
+
+  .container_layout {
+
+    gap: 15px;
+  }
+
+  .main_layout_cstm  {
+
+    padding-top: 80px;
+    padding-bottom: 0px;
+    gap: 15px;
+  }
+
+  .main_layout_login  {
+
+    padding-top: 80px;
+    padding-bottom: 0px;
   }
 }
