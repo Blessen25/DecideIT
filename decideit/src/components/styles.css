@@ -4,6 +4,9 @@
     border-radius: 5px;
     color: var(--color-text);
     transition: all 0.7s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button-primary {
@@ -52,6 +55,6 @@
     
     .button {
     
-        padding: 5px 8px;
+        padding: 8px 10px;
     }
 }
