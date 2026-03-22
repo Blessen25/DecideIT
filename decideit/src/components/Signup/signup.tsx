@@ -49,13 +49,13 @@ const Signup = () => {
                                 <Button_Secondary_with_Icon label='Sign Up with Google' icon='fa-brands fa-google'/>
                                 <Button_Primary_with_Icon label='Sign Up with Facebook' icon='fa-brands fa-facebook'/>
                                 <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
-                                    <p className='body-text fw-600' style={{display:'flex', gap:'5px'}}>Already have an account?<span><a href="#" className='loginbutt'>Login</a></span></p>
+                                    <p className='body-text fw-600' style={{display:'flex', gap:'5px'}}>Already have an account?<span><a href="/login" className='loginbutt'>Login</a></span></p>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </>
-           </Container>
+            </Container>
         </>
     )
 }

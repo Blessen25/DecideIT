@@ -82,7 +82,7 @@ export const Header_Signup = () => {
                             ) :(
                             <>
                                 <a href="/signup" className="deco-none body-text header-link register-link">Register</a>
-                                <Button_Primary_with_Icon label="Login" icon="fa-solid fa-user"/>
+                                <Button_Primary_with_Icon label="Login" icon="fa-solid fa-user" route="/login"/>
                             </>)
                         }
                     </div>
