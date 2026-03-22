@@ -65,6 +65,32 @@
     gap: 20px;
 }
 
+.loginbutt {
+
+    text-decoration: none;
+    color: var(--color-primary);
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.loginbutt::after {
+
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: all 0.7s ease-in-out;
+
+}
+
+.loginbutt:hover::after {
+
+    width: 100%;
+}
+
 @media screen and (max-width: 991px) {
     
     #signup {

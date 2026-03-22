@@ -3,6 +3,7 @@ import { Header_Signup } from "./components/Header/header";
 import { Home } from "./components/Home/home";
 import Signup from "./components/Signup/signup";
 import Login from "./components/Login/login";
+import Signup_Step2 from "./components/Signup/signup2";
 
 
 const App = () => {
@@ -16,7 +17,7 @@ const App = () => {
           <Route path="/" element={<Home />}/>
           <Route path="/login" element={<Login />}/>
           <Route path="/signup" element={<Signup />}/>
-
+          <Route path="/signup/signup2" element={<Signup_Step2 />}/>
         </Routes>
       </BrowserRouter>
     </>
