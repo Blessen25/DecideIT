@@ -65,6 +65,51 @@
   text-decoration: none;
 }
 
+d-flex {
+
+  display: flex;
+}
+
+.flex-column {
+
+  flex-direction: column;
+}
+
+.flex-row {
+
+  flex-direction: row;
+}
+
+.align-center {
+
+  align-items: center;
+}
+
+.justify-between {
+
+  justify-content: space-between;
+}
+
+.justify-center {
+
+  justify-content: center;
+}
+
+.gap-10 {
+
+  gap: 10px;
+}
+
+.gap-20 {
+
+  gap: 20px;
+}
+
+.gap-resp {
+
+  gap: 20px;
+}
+
 @media screen and (max-width: 1600px) {
   
 
@@ -133,4 +178,10 @@
     padding-top: 80px;
     padding-bottom: 0px;
   }
+
+  .gap-resp {
+
+    gap: 15px;
+  }
+
 }
