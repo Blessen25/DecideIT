@@ -31,9 +31,10 @@
 
 .main_layout_cstm  {
 
-  padding-top: 120px;
-  padding-bottom: 30px;
+  padding-top: 160px;
+  padding-bottom: 60px;
   justify-content: center;
+  gap: 60px !important;
 }
 
 .main_layout_login  {
@@ -65,7 +66,7 @@
   text-decoration: none;
 }
 
-d-flex {
+.d-flex {
 
   display: flex;
 }
@@ -149,6 +150,7 @@ d-flex {
 
     padding-top: 120px;
     padding-bottom: 30px;
+    gap: 30px !important;
   }
 }
 
@@ -157,7 +159,7 @@ d-flex {
   
   .containercstm {
 
-    padding: 15px;
+    padding: 0px 15px;
     gap: 15px;
   }
 
@@ -168,9 +170,9 @@ d-flex {
 
   .main_layout_cstm  {
 
-    padding-top: 80px;
-    padding-bottom: 0px;
-    gap: 15px;
+    padding-top: 95px;
+    padding-bottom: 15px;
+    gap: 15px !important;
   }
 
   .main_layout_login  {

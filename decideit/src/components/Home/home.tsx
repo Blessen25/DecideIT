@@ -8,7 +8,16 @@ export const Home = () => {
         <>
            <Container layout_class='main_layout_cstm'>
                 <>
-                    <h1>adjasjkdjskad</h1>
+                    <div className="d-flex gap-resp">
+                        <div className="firstdiv-home">
+                            <h1>Decide together, wherever you are</h1>
+                            <p>Whether you're choosing where to eat, what to play, or planning your next trip, DecideIT helps you create polls and make decisions with your friends instantly.</p>
+                        </div>
+                        <div className="seconddiv-home">
+                            <h1>Decide together, wherever you are</h1>
+                            <p>Whether you're choosing where to eat, what to play, or planning your next trip, DecideIT helps you create polls and make decisions with your friends instantly.</p>
+                        </div>
+                    </div>
                 </>
            </Container>
         </>
